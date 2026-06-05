@@ -1,0 +1,24 @@
+Dog
+Buddy
+3
+Golden Retriever
+60
+Seeing Eye
+Cat
+Whiskers
+2
+Siamese
+10
+true
+Dog
+Rocky
+5
+German Shepherd
+80
+None
+Cat
+Shadow
+4
+Persian
+12
+false
