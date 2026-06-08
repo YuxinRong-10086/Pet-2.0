@@ -2,7 +2,8 @@ public class Cat extends Pet implements Adoptable{
     private boolean goodMouser;
     //How can I make the code work without the constructor?
     public Cat(String name, int age, String breed, int weight, boolean goodMouser){
-        supper(name,age,breed,weight);
+        super(name,age,breed,weight);
+        
         this.goodMouser = goodMouser;
     }
 
