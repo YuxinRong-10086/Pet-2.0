@@ -40,7 +40,7 @@ public class PetTester{
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pets.dat"));
 
         for(Pet pet : pets){
-            System.out.println(pet);
+            out.writeObject(pet);
     }
 
         out.close();
