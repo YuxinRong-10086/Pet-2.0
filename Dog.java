@@ -3,22 +3,19 @@ public class Dog extends Pet implements Adoptable{
     
     //How can I make the ccode work without the constructor?
     public Dog(String name, int age, String breed, int weight, String service){
-        setName(name);
-        setAge(age);
-        setBreed(breed);
-        setWeight(weight);
-
+        super(name,age,breed,weight);
         this.service = service;
 
-    addPet();
     }
 
     // Required abstract method
+    @Override
     public String getSpecies(){
          return "Dog";
     }
 
     // Required interface method
+    @Override
     public double calculateAdoptionFee(){
         double fee = BASE_FEE + (getWeight() * 2);
 
