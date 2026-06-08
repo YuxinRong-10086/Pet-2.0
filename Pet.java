@@ -9,16 +9,20 @@ public abstract class Pet implements Serializable{
         private int age;
         private String breed;
         private int weight;
+    public Pet(String name, int age, String breed, int weight){
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+        setWeight(weight);
+
+        totalPets++;
+    }
 
     public abstract String getSpecies();
 
-    public static int getTotalPets()
-    {
-    return totalPets;
-}
 
-    public void addPet(){
-        totalPets++;
+    public static int getTotalPets(){
+        return totalPets;
     }
 
     public String getName(){
