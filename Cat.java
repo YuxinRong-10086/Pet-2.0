@@ -1,23 +1,19 @@
 public class Cat extends Pet implements Adoptable{
     private boolean goodMouser;
-    //How can I make the ccode work without the constructor?
+    //How can I make the code work without the constructor?
     public Cat(String name, int age, String breed, int weight, boolean goodMouser){
-        setName(name);
-        setAge(age);
-        setBreed(breed);
-        setWeight(weight);
-
+        supper(name,age,breed,weight);
         this.goodMouser = goodMouser;
-
-        addPet();
     }
 
         // abstract method
+        @Override
         public String getSpecies(){
         return "Cat";
         }
 
     // interface method
+    @Override
     public double calculateAdoptionFee(){
     double fee = BASE_FEE;
 
