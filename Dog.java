@@ -1,7 +1,7 @@
 public class Dog extends Pet implements Adoptable{
     private String service;
     
-    //How can I make the ccode work without the constructor?
+    //How can I make the code work without the constructor?
     public Dog(String name, int age, String breed, int weight, String service){
         super(name,age,breed,weight);
         this.service = service;
