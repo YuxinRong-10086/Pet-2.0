@@ -1,4 +1,9 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 
 public class PetTester{
     public static void main(String[] args){
@@ -6,7 +11,7 @@ public class PetTester{
 
 // Read from data.txt
     try {
-    BufferedReader br = new BufferedReader( new FileReader("data.txt"));
+    BufferedReader br = new BufferedReader(new FileReader("data.txt"));
 
         for(int i = 0; i < pets.length; i++){
     String type = br.readLine();
@@ -52,7 +57,7 @@ public class PetTester{
 }
 
     try{
-        ObjectInputStream in = new ObjectInputStream( new FileInputStream("pets.dat"));
+        ObjectInputStream in = new ObjectInputStream(new FileInputStream("pets.dat"));
 
     for(int i = 0; i < pets.length; i++){
     Pet pet = (Pet)in.readObject();
